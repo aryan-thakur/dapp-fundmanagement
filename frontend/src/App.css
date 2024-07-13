@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-title {
+  background-color: #282c34;
+  color: white;
+  height: 100px;
+  margin-top: -30px;
+  padding-top: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+/* CSS */
+.connectButton {
+  width: 200px;
+  appearance: none;
+  background-color: #282c42;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.connectButton:disabled {
+  pointer-events: none;
+}
+
+.connectButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.connectButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#launchConnection {
+  width: 300px;
+}
+
+#contractError{
+  color: red;
+}
+
+.voting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* CSS */
+.voteButtons {
+  margin-left: 15px;
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#yesButton:hover {
+  background-color: seagreen;
+  color: #fff;
+}
+
+#noButton:hover {
+  background-color: firebrick;
+  color: #fff;
+}
+
+#executeButton:hover {
+  background-color: sandybrown;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .voteButtons {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+#executeButton {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.spendingWrapper {
+    font-size: 24px;
+    border: 4px solid rgb(54, 62, 69);
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 800px;
+    padding: 20px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+#refreshSpendings {
+  margin-top: -10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#refreshSpendings:hover {
+  font-size: 16px;
+}
